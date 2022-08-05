@@ -5,7 +5,7 @@ import { TextParticles } from 'react-text-particles';
 import Typical from 'react-typical';
 import Profile from '../../../Images/ProfilePic.jpg';
 import './HeroAnimention.css'
-import { faFacebook, faGithub, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faGithub, faLinkedin, faTwitter, faYoutube,faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import "animate.css/animate.min.css";
 
@@ -27,15 +27,15 @@ const HeroSrction = () => {
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, libero a. Provident expedita, accusamus tempore ea quibusdam quas nihil architecto iste ratione esse, assumenda fugit quae cum temporibus dicta non ipsum a amet natus.</p>
                 </div>
                 <div className="socialMedia list-none grid grid-cols-8 md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-0 my-10 ">
-                    <li><FontAwesomeIcon icon={faFacebook} size='2x'/></li>
-                    <li><FontAwesomeIcon icon={faTwitter} size='2x'/></li>
-                    <li><FontAwesomeIcon icon={faLinkedin} size='2x'/></li>
-                    <li><FontAwesomeIcon icon={faGithub} size='2x'/></li>
-                    <li><FontAwesomeIcon icon={faYoutube} size='2x'/></li>
+                    <li ><FontAwesomeIcon icon={faFacebook} size='2x' className='cursor-pointer' onClick={()=>window.open("https://www.facebook.com/msikhan11", '_blank', 'noopener,noreferrer')} /></li>
+                    <li><FontAwesomeIcon icon={faTwitter} size='2x' className='cursor-pointer' onClick={()=>window.open("https://twitter.com/msikhan11", '_blank', 'noopener,noreferrer')} /></li>
+                    <li><FontAwesomeIcon icon={faLinkedin} size='2x' className='cursor-pointer' onClick={()=>window.open()} /></li>
+                    <li><FontAwesomeIcon icon={faInstagram} size='2x' className='cursor-pointer' onClick={()=>window.open("https://www.instagram.com/msi.khan", '_blank', 'noopener,noreferrer')} /></li>
+                    <li><FontAwesomeIcon icon={faYoutube} size='2x' className='cursor-pointer' onClick={()=>window.open("https://www.youtube.com/msikhan", '_blank', 'noopener,noreferrer')} /></li>
                 </div>
                 <div>
-                <button className=' px-3 py-2 text-2xl rounded-md'>Resume</button>
-                <button className=' px-4 py-2 text-2xl rounded-md ml-4'>My CV</button>
+                <button className=' px-3 py-2 text-2xl rounded-md btn '>Resume</button>
+                <button className=' px-4 py-2 text-2xl rounded-md ml-4 btn'>My CV</button>
                 </div>
             </div>
             <AnimationOnScroll animateIn="animate__fadeInRightBig">

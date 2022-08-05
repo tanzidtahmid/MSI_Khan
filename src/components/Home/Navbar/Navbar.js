@@ -8,8 +8,8 @@ import LogoPic from '../../../Images/AboutMe.jpg'
 const navigation = [
   { name: 'Home', href: '/', current: false },
   { name: 'About Me', href: '/about', current: false },
-  { name: 'Articles', href: '#', current: false },
-  { name: 'Achievements', href: '#', current: false },
+  { name: 'Articles', href: '/building-page', current: false },
+  { name: 'Achievements', href: '/all-achivements', current: false },
 ]
 
 function classNames(...classes) {
@@ -75,10 +75,10 @@ export default function Navbar() {
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
-                <Disclosure.Button
+                <Link
+                to = {item.href}
                   key={item.name}
                   as="a"
-                  href={item.href}
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
@@ -86,7 +86,7 @@ export default function Navbar() {
                   aria-current={item.current ? 'page' : undefined}
                 >
                   {item.name}
-                </Disclosure.Button>
+                </Link>
               ))}
             </div>
           </Disclosure.Panel>

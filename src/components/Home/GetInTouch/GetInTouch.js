@@ -1,8 +1,10 @@
 import { faCodeBranch, faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const GetInTouch = () => {
+    const navigate = useNavigate();
     return (
         <div className='text-center mt-16'>
             <h4 className='text-xl' style={{ color: 'rgb(11 194 194)' }}>What's Next?</h4>
@@ -12,7 +14,7 @@ const GetInTouch = () => {
             </div>
 
             <div className='mt-16'>
-                <button className=' px-3 py-2 mt-5 rounded-md'>  Say Hello</button>
+                <button className=' px-3 py-2 mt-5 rounded-md bg-cyan-500' onClick={() => navigate('/building_page')}>  Say Hello</button>
             </div>
 
             <div className='mt-16'>
