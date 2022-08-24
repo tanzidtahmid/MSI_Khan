@@ -46,7 +46,7 @@ const Achievements = () => {
            </AnimationOnScroll>
         </div>
       <div className='text-center'>
-      <button className=' px-3 py-2 mt-5 rounded-md bg-cyan-500' onClick={() => navigate('/building_page')}>More Achievements</button>
+      <button className=' px-3 py-2 mt-5 rounded-md bg-cyan-500' onClick={() => navigate('/all-achivements')}>More Achievements</button>
       </div>
    </div>
     );

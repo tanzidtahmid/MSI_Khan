@@ -2,7 +2,6 @@ import React from 'react';
 import Achievements from '../Achievements/Achievements';
 import Articles from '../Articles/Articles';
 import GetInTouch from '../GetInTouch/GetInTouch';
-import HeroAnimention from '../HeroSection/HeroAnimention';
 import HeroSrction from '../HeroSection/HeroSrction';
 import Navbar from '../Navbar/Navbar';
 import Videos from '../Videos/Videos';
